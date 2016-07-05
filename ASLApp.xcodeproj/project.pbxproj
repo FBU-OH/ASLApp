@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		3E2ADBF11D2C6F070011A519 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2ADBF01D2C6F070011A519 /* AppDelegate.swift */; };
-		3E2ADBF31D2C6F070011A519 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2ADBF21D2C6F070011A519 /* ViewController.swift */; };
 		3E2ADBF61D2C6F070011A519 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E2ADBF41D2C6F070011A519 /* Main.storyboard */; };
 		3E2ADBF81D2C6F070011A519 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E2ADBF71D2C6F070011A519 /* Assets.xcassets */; };
 		3E2ADBFB1D2C6F070011A519 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E2ADBF91D2C6F070011A519 /* LaunchScreen.storyboard */; };
 		3E2ADC061D2C6F070011A519 /* ASLAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2ADC051D2C6F070011A519 /* ASLAppTests.swift */; };
 		3E2ADC111D2C6F070011A519 /* ASLAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2ADC101D2C6F070011A519 /* ASLAppUITests.swift */; };
+		3E2ADC201D2C75B20011A519 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2ADC1F1D2C75B20011A519 /* HomeViewController.swift */; };
+		3E2ADC221D2C75F30011A519 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2ADC211D2C75F30011A519 /* CameraViewController.swift */; };
+		3E2ADC241D2C76190011A519 /* ConvoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2ADC231D2C76190011A519 /* ConvoViewController.swift */; };
+		3E2ADC261D2C76250011A519 /* PrevConvoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2ADC251D2C76250011A519 /* PrevConvoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,6 @@
 /* Begin PBXFileReference section */
 		3E2ADBED1D2C6F070011A519 /* ASLApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASLApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E2ADBF01D2C6F070011A519 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3E2ADBF21D2C6F070011A519 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3E2ADBF51D2C6F070011A519 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3E2ADBF71D2C6F070011A519 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E2ADBFA1D2C6F070011A519 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,10 @@
 		3E2ADC0C1D2C6F070011A519 /* ASLAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ASLAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E2ADC101D2C6F070011A519 /* ASLAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASLAppUITests.swift; sourceTree = "<group>"; };
 		3E2ADC121D2C6F070011A519 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E2ADC1F1D2C75B20011A519 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		3E2ADC211D2C75F30011A519 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		3E2ADC231D2C76190011A519 /* ConvoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConvoViewController.swift; sourceTree = "<group>"; };
+		3E2ADC251D2C76250011A519 /* PrevConvoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrevConvoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +103,8 @@
 		3E2ADBEF1D2C6F070011A519 /* ASLApp */ = {
 			isa = PBXGroup;
 			children = (
+				3E2ADC1E1D2C6F360011A519 /* View Controllers */,
 				3E2ADBF01D2C6F070011A519 /* AppDelegate.swift */,
-				3E2ADBF21D2C6F070011A519 /* ViewController.swift */,
 				3E2ADBF41D2C6F070011A519 /* Main.storyboard */,
 				3E2ADBF71D2C6F070011A519 /* Assets.xcassets */,
 				3E2ADBF91D2C6F070011A519 /* LaunchScreen.storyboard */,
@@ -123,6 +129,17 @@
 				3E2ADC121D2C6F070011A519 /* Info.plist */,
 			);
 			path = ASLAppUITests;
+			sourceTree = "<group>";
+		};
+		3E2ADC1E1D2C6F360011A519 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3E2ADC1F1D2C75B20011A519 /* HomeViewController.swift */,
+				3E2ADC211D2C75F30011A519 /* CameraViewController.swift */,
+				3E2ADC231D2C76190011A519 /* ConvoViewController.swift */,
+				3E2ADC251D2C76250011A519 /* PrevConvoViewController.swift */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +273,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E2ADBF31D2C6F070011A519 /* ViewController.swift in Sources */,
+				3E2ADC261D2C76250011A519 /* PrevConvoViewController.swift in Sources */,
+				3E2ADC241D2C76190011A519 /* ConvoViewController.swift in Sources */,
 				3E2ADBF11D2C6F070011A519 /* AppDelegate.swift in Sources */,
+				3E2ADC201D2C75B20011A519 /* HomeViewController.swift in Sources */,
+				3E2ADC221D2C75F30011A519 /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
