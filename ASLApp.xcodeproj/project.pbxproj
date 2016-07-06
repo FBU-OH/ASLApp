@@ -19,6 +19,7 @@
 		3E2ADC261D2C76250011A519 /* PrevConvoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2ADC251D2C76250011A519 /* PrevConvoViewController.swift */; };
 		3E2ADC281D2D77A70011A519 /* Libraries in Resources */ = {isa = PBXBuildFile; fileRef = 3E2ADC271D2D77A70011A519 /* Libraries */; };
 		3E2ADC2C1D2D797C0011A519 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E2ADC2B1D2D797C0011A519 /* opencv2.framework */; };
+		7414D33D1D2DA54500973DC1 /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7414D33C1D2DA54500973DC1 /* OpenCVWrapper.mm */; };
 		A430FBDCD857092A63CE5C0F /* Pods_ASLAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F8EEFCF8C61BA71C81F06E /* Pods_ASLAppTests.framework */; };
 		B549F53F74183B5263500F46 /* Pods_ASLAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 214FA5AD749E4720FC48471D /* Pods_ASLAppUITests.framework */; };
 		E3AB7E14184DC877C3DF1E75 /* Pods_ASLApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FF53DE70B95CD1DB35D9E30 /* Pods_ASLApp.framework */; };
@@ -69,6 +70,9 @@
 		5C0485F4ABC2363EA2147228 /* Pods-ASLApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASLApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ASLApp/Pods-ASLApp.debug.xcconfig"; sourceTree = "<group>"; };
 		5FF53DE70B95CD1DB35D9E30 /* Pods_ASLApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ASLApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		677C7AECA37B75E1F7D85909 /* Pods-ASLAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASLAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ASLAppTests/Pods-ASLAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		7414D33A1D2DA54500973DC1 /* ASLApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ASLApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		7414D33B1D2DA54500973DC1 /* OpenCVWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenCVWrapper.h; path = OpenCVWrappers/OpenCVWrapper.h; sourceTree = "<group>"; };
+		7414D33C1D2DA54500973DC1 /* OpenCVWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = OpenCVWrapper.mm; path = OpenCVWrappers/OpenCVWrapper.mm; sourceTree = "<group>"; };
 		B027F54461E66A8C856B9C0F /* Pods-ASLAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASLAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ASLAppUITests/Pods-ASLAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,6 +137,7 @@
 				3E2ADBF71D2C6F070011A519 /* Assets.xcassets */,
 				3E2ADBF91D2C6F070011A519 /* LaunchScreen.storyboard */,
 				3E2ADBFC1D2C6F070011A519 /* Info.plist */,
+				7414D33E1D2DA55200973DC1 /* OpenCVWrappers */,
 			);
 			path = ASLApp;
 			sourceTree = "<group>";
@@ -176,6 +181,16 @@
 				214FA5AD749E4720FC48471D /* Pods_ASLAppUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7414D33E1D2DA55200973DC1 /* OpenCVWrappers */ = {
+			isa = PBXGroup;
+			children = (
+				7414D33B1D2DA54500973DC1 /* OpenCVWrapper.h */,
+				7414D33C1D2DA54500973DC1 /* OpenCVWrapper.mm */,
+				7414D33A1D2DA54500973DC1 /* ASLApp-Bridging-Header.h */,
+			);
+			name = OpenCVWrappers;
 			sourceTree = "<group>";
 		};
 		B6A933DA23419CEF95AE88CD /* Pods */ = {
@@ -456,6 +471,7 @@
 			files = (
 				3E2ADC261D2C76250011A519 /* PrevConvoViewController.swift in Sources */,
 				3E2ADC241D2C76190011A519 /* ConvoViewController.swift in Sources */,
+				7414D33D1D2DA54500973DC1 /* OpenCVWrapper.mm in Sources */,
 				3E2ADBF11D2C6F070011A519 /* AppDelegate.swift in Sources */,
 				3E2ADC201D2C75B20011A519 /* HomeViewController.swift in Sources */,
 				3E2ADC221D2C75F30011A519 /* CameraViewController.swift in Sources */,
@@ -601,6 +617,7 @@
 			baseConfigurationReference = 5C0485F4ABC2363EA2147228 /* Pods-ASLApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Libraries",
@@ -609,6 +626,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.ASLApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ASLApp/ASLApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -617,6 +636,7 @@
 			baseConfigurationReference = 4CFADA1C29FDE7D2677DBF1C /* Pods-ASLApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Libraries",
@@ -625,6 +645,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.ASLApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ASLApp/ASLApp-Bridging-Header.h";
 			};
 			name = Release;
 		};

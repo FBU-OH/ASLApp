@@ -16,9 +16,24 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="minion007" translatesAutoresizingMaskIntoConstraints="NO" id="98J-JZ-vi7">
+                                <rect key="frame" x="40" y="220" width="240" height="128"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIk-Il-GlZ">
+                                <rect key="frame" x="106" y="393" width="109" height="30"/>
+                                <state key="normal" title="Make Grayscale"/>
+                                <connections>
+                                    <action selector="makeGrayscalePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ODk-gh-ugM"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="homeImageView" destination="98J-JZ-vi7" id="eO4-0C-h30"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -103,4 +118,7 @@
             <point key="canvasLocation" x="1072" y="163"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="minion007" width="720" height="450"/>
+    </resources>
 </document>

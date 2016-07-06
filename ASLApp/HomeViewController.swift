@@ -10,6 +10,8 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var homeImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +23,9 @@ class HomeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func makeGrayscalePressed(sender: AnyObject) {
+        homeImageView.image = OpenCVWrapper.makeGrayFromImage(homeImageView.image)
+    }
 
     /*
     // MARK: - Navigation
