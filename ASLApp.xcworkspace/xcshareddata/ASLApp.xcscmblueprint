@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "DE3B679E28D754AAE0A997DD346488D68178F474",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "91189E407B084C39E74AFD3361DF36174A918AA5" : 0,
+    "DE3B679E28D754AAE0A997DD346488D68178F474" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "9B09F2D4-5569-4894-A69D-A29B63FA7071",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "91189E407B084C39E74AFD3361DF36174A918AA5" : "..\/..",
+    "DE3B679E28D754AAE0A997DD346488D68178F474" : "ASLApp\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ASLApp",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ASLApp.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "ssh:\/\/projects.git.vip.facebook.com\/data\/gitrepos\/fbu.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "91189E407B084C39E74AFD3361DF36174A918AA5"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/FBU-OH\/ASLApp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DE3B679E28D754AAE0A997DD346488D68178F474"
+    }
+  ]
+}

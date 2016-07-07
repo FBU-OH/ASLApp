@@ -17,4 +17,7 @@
 //Convert UIImage to Grayscale
 +(UIImage *) makeGrayFromImage:(UIImage *) image;
 
+//Initialize Camera
+//+(void) initializeCamera:(self);
+
 @end
